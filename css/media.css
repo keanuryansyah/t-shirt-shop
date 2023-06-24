@@ -1,0 +1,444 @@
+/* 1024px */
+
+@media screen and (max-width : 1024px) {
+
+    #mainHero {
+        background-position-x: -200px;
+    }
+
+    #mainCtn h2 {
+        width: 60%;
+    }
+
+    .textLatest h2 {
+        width: 100%;
+    }
+
+}
+
+/* 928px */
+
+@media screen and (max-width : 928px) {
+
+    .cat {
+        height: 240px;
+    }
+
+}
+
+/* 800px */
+
+@media screen and (max-width : 800px) {
+
+    /* burger menu start */
+
+    #containerHead {
+        position: relative;
+    }
+
+    .menuLink {
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        display: block;
+        width: 400px;
+        height: 100vh;
+        left: -100%;
+        transition: .6s;
+        -webkit-transition: .6s;
+        -moz-transition: .6s;
+        -ms-transition: .6s;
+        -o-transition: .6s;
+    }
+
+    .menuLink.active {
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        display: block;
+        width: 400px;
+        height: 100vh;
+        left: 0;
+    }
+
+    .menuLink a {
+        height: max-content;
+        padding: 20px 0;
+        margin: 0 16px;
+        border-bottom: 2px dashed white;
+        color: #fff;
+    }
+
+    .menuLink a:first-child {
+        border-bottom: 2px dashed white;
+    }
+
+    .menuLink a:hover {
+        color: pink;
+        border-bottom: 2px dashed pink;
+
+    }
+
+    .menuLink span {
+        display: flex;
+        font-family: 'poppins', sans-serif;
+        justify-content: center;
+        color: black;
+        margin-top: 20px;
+        font-size: 4em;
+        color: pink;
+        cursor: pointer;
+    }
+
+    .burgerMenu {
+        width: auto;
+        height: auto;
+        margin-left: 22px;
+        cursor: pointer;
+    }
+
+    .burgerMenu div {
+        width: 22px;
+        height: 4px;
+        background-color: darkolivegreen;
+        margin: 4px 0;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        position: relative;
+        cursor: pointer;
+    }
+
+
+    /* burger menu end */
+
+    /* main content start */
+
+    #mainCtn h2 {
+        width: 80%;
+    }
+
+    #mainHero {
+        background-position-x: -350px;
+    }
+
+    /* main contend end */
+
+    /* kategori homepage button start */
+
+    #afmCtn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .cat {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* kategori homepage button end */
+
+    /* latest produk start */
+
+    .textLatest h2 {
+        line-height: 1;
+        font-size: 1.8em;
+    }
+
+    /* latest produk end  */
+
+    /* best sell produk start */
+
+    .bestSellCardPr {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* best sell produk end */
+
+    /* modal ctn */
+
+    .sectCtn {
+        width: 700px;
+        height: 500px;
+    }
+
+    .keteranganProduk {
+        width: 100%;
+        height: 50%;
+        line-height: 1.7;
+    }
+
+    /* modal content end */
+
+}
+
+/* 700px kusus section modal  */
+
+@media screen and (max-width : 700px) {
+
+    .sectCtn {
+        width: 900px;
+        max-width: 100%;
+        height: 600px;
+        padding: 10px;
+        background-color: white;
+        color: black;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftCtnModal {
+        width: 100%;
+        height: max-content;
+        line-height: 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .leftCtnModal img {
+        height: 150px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 20%;
+    }
+
+    .middleCtnModal {
+        padding: 0 10px;
+        width: 50%;
+        height: 70%;
+        align-items: end;
+        justify-content: flex-end;
+        position: absolute;
+        right: 0;
+        top: 170px;
+    }
+
+    .rightCtnModal {
+        width: 50%;
+        height: 80%;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        top: 150px;
+    }
+
+    .keteranganProduk {
+        width: 100%;
+        height: 45%;
+        line-height: 1.7;
+    }
+
+    .closeModal {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+}
+
+/* 600px */
+
+@media screen and (max-width : 600px) {
+
+    /* main content start */
+
+    #mainHero {
+        background-position-x: -450px;
+    }
+
+    #mainCtn h2 {
+        width: 100%;
+    }
+
+    /* main content end */
+
+
+    /* kategori homepage start */
+
+    #afmCtn {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .cat {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* kategori homepage end */
+
+
+    /* latest prouduk start */
+
+    #latestProdCtn {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textLatest {
+        order: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .textLatest h2 {
+        width: 80%;
+    }
+
+    .sliderLatest {
+        order: 1;
+        width: 100%;
+    }
+
+
+    /* latest produk end */
+
+    /* best sell card start */
+
+    .bestSellCardPr {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* best sell card end */
+
+    /* footer start */
+
+    #footerPr {
+        height: auto;
+    }
+
+    .footerCtn {
+        flex-direction: column;
+    }
+
+    .globalFooter {
+        width: 100%;
+    }
+
+    .getInTouchFooter p {
+        width: 80%;
+    }
+
+    .copyRight {
+        padding: 15px 0;
+    }
+
+    /* footer end */
+
+}
+
+
+/* 500px */
+
+@media screen and (max-width : 500px) {
+
+    /* main hero start */
+    #mainHero {
+        background-position-x: -550px;
+    }
+
+    #mainCtn h2 {
+        font-size: 2.5em;
+    }
+
+    /* main hero end */
+
+    /* kategori homepage button */
+
+    .cat {
+        height: 200px;
+    }
+
+    /* kategori homepage button end */
+
+    /* best sell card start */
+
+    .bestSellCardPr {
+        grid-template-columns: 1fr;
+    }
+
+    /* best sell card end */
+
+}
+
+@media screen and (max-width : 400px) {
+
+    /* menu link start */
+
+    .menuLink {
+        width: 100%;
+    }
+
+    .menuLink.active {
+        width: 100%;
+    }
+
+    /* menu link end */
+
+    /* main hero start */
+
+    #mainHero {
+        background-position-x: -600px;
+    }
+
+
+    #mainCtn h2 {
+        font-size: 1.8em;
+    }
+
+    /* main hero end */
+
+    /* slider start */
+
+    .sliderCtn {
+        height: 250px;
+    }
+
+    .textLatest h2 {
+        font-size: 1.3em;
+    }
+
+    /* slider end */
+
+    /* best sell card start */
+
+    .bestSellCard {
+        height: 300px;
+    }
+
+    .imageBestSell {
+        height: 230px;
+    }
+
+    /* best sell card end */
+
+    /* footer start */
+
+    .copyRight p {
+        font-size: 12px;
+    }
+
+    /* footer end */
+
+}

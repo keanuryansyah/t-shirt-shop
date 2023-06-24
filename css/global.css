@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+div,
+span {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1120px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}

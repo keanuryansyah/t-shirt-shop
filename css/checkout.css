@@ -1,0 +1,451 @@
+#sectHead {
+    border-bottom: 1px solid #333;
+}
+
+/* left */
+
+#sectionTable {
+    padding-top: 70px;
+}
+
+.flex {
+    width: 65%;
+}
+
+.tableCo {
+    padding: 40px 0;
+    height: auto;
+    display: flex;
+}
+
+.tableCo table {
+    width: 100%;
+    height: 600px;
+    border-color: #e6e6e6;
+    height: max-content;
+    border: 1px solid #333;
+}
+
+.tableCo table .tableJudul {
+    width: 100%;
+}
+
+.tableCo table .tableJudul th {
+    padding: 15px 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.tableCo table .tableJudul th p {
+    width: 100%;
+}
+
+.tableJudul th:first-child {
+    width: 15%;
+    text-align: start;
+}
+
+.tableJudul th:first-child p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tableJudul th:nth-child(2) {
+    width: 20%;
+}
+
+.tableJudul th:nth-child(3) {
+    width: 20%;
+}
+
+.tableJudul th:nth-child(4) {
+    width: 20%;
+}
+
+.tableJudul th:nth-child(5) {
+    width: 10%;
+}
+
+.tableJudul th:last-child {
+    width: 15%;
+}
+
+
+.tableData {
+    height: 160px;
+}
+
+
+.tableData td {
+    border-top: 1px solid #555;
+    color: #555;
+}
+
+.flex .tableData:last-child {
+    border: none;
+}
+
+.tableData td {
+    padding: 20px 0;
+}
+
+.tableData td .plusMinItem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.plusMinItem span:first-child {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    -ms-transform: translateX(-200%);
+    -o-transform: translateX(-200%);
+}
+
+.plusMinItem span:first-child.active {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+
+.tableData td .plusMinItem span {
+    border: 1px solid #333;
+    padding: 4px 10px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.plusMinItem span:first-child,
+.plusMinItem span:last-child {
+    cursor: pointer;
+}
+
+.plusMinItem span:first-child:hover,
+.plusMinItem span:last-child:hover {
+    background-color: #333;
+    color: white;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.tableData td p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.tableData td:first-child {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tableData td:nth-child(2) p {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.hargaAwal {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.tableData td:nth-child(5) p i {
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+}
+
+
+.tableData td img {
+    width: 80%;
+    height: 100%;
+}
+
+
+.totalTableData {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+}
+
+
+/* coupon */
+
+.coupon {
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+    border: 1px solid #333;
+}
+
+.isiCoupon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.isiCoupon input {
+    border: 1px solid #333;
+    width: 200px;
+    padding: 10px 0 10px 12px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+}
+
+.isiCoupon p {
+    padding: 10px 18px;
+    background-color: #333;
+    color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.isiCoupon p:hover {
+    background-color: #000;
+}
+
+
+/* right */
+.checkOutBox {
+    width: 35%;
+    height: 550px;
+    margin-left: 20px;
+    padding: 0 20px;
+    border: 1px solid #333;
+}
+
+.cartTotals {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px dashed #333;
+}
+
+.cartTotals h4 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+.subTotalWr {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.subTotal {
+    width: 25%;
+    color: #000;
+}
+
+.spanDolar {
+    margin-left: 10px;
+}
+
+.shipping {
+    display: flex;
+    height: 300px;
+    padding: 12px 0;
+    border-bottom: 2px dashed #333;
+}
+
+.shippingText {
+    width: 25%;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.isiShippingText {
+    width: 75%;
+    margin-left: 15px;
+    line-height: 3;
+    padding: 5px 0;
+}
+
+.isiShippingText p {
+    width: 80%;
+    font-family: 'poppins', sans-serif;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.3;
+}
+
+.isiShippingText p:nth-child(2) {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#selectCountry {
+    width: 75%;
+    height: 30px;
+    border: 1px solid #333;
+    font-family: 'poppins', sans-serif;
+}
+
+.inputPostCode input {
+    width: 75%;
+    height: 30px;
+    border: 1px solid #333;
+    font-family: 'poppins', sans-serif;
+    padding: 0 5px;
+}
+
+.inputCity input {
+    width: 75%;
+    height: 30px;
+    border: 1px solid #333;
+    font-family: 'poppins', sans-serif;
+    padding: 0 5px;
+}
+
+.totalCo {
+    width: 100%;
+    height: 150px;
+    padding: 15px 0;
+}
+
+.totalAkhirCo {
+    width: 25%;
+}
+
+.dolarTotal {
+    margin-left: 10px;
+}
+
+.totalCoWr {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+.coNow {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coNow p {
+    padding: 12px 32px;
+    font-family: 'poppins', sans-serif;
+    background-color: darkolivegreen;
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 25px;
+    font-weight: 600;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    cursor: pointer;
+}
+
+.coNow p:hover {
+    background-color: #333;
+}
+
+
+
+/* co kosong */
+
+.coKosongPr {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coKosongChild {
+    width: 80%;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coKosongChild h2 {
+    font-family: 'poppins', sans-serif;
+    font-size: 26px;
+    text-align: center;
+}
+
+.coKosongChild a {
+    padding: 6px 26px;
+    background-color: #333;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.coKosongChild a:hover {
+    background-color: #000;
+    color: white;
+}
+
+.semua {
+    display: none;
+}

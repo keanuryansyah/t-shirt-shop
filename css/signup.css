@@ -1,0 +1,273 @@
+#sectHead {
+    border-bottom: 1px solid #333;
+}
+
+#signupSect {
+    padding-top: 70px;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signupCtn {
+    height: 80%;
+    padding: 20px 16px;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.signUpText {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'roboto', sans-serif;
+    font-size: 26px;
+    color: #333;
+}
+
+.enkripsi {
+    width: 200px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #000;
+    padding: 0 10px;
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    position: absolute;
+    right: 60px;
+    top: 0;
+    z-index: 9;
+    display: none;
+}
+
+.enkripsi p::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    position: absolute;
+    top: 42px;
+    right: -12px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+
+.signUpText i {
+    color: #333;
+    cursor: pointer;
+}
+
+#signupCtn form {
+    width: 100%;
+    height: 80%;
+}
+
+#signupCtn form ul {
+    height: 100%;
+}
+
+#signupCtn form ul li {
+    height: calc(100% / 7);
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#signupCtn form ul li label {
+    margin-right: 10px;
+    font-family: 'poppins', sans-serif;
+    color: #333;
+    width: 20%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#signupCtn form ul li input {
+    width: 60%;
+    height: 50px;
+    outline: none;
+    background-color: whitesmoke;
+    border: transparent;
+    padding: 0 5px;
+}
+
+.genderOption {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    width: 30%;
+}
+
+.genderOption p {
+    margin: 0 10px;
+    font-family: 'poppins', sans-serif;
+    color: #333;
+}
+
+#signupCtn form ul li:last-child span {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    color: darkolivegreen;
+}
+
+#signupCtn form ul li:last-child input {
+    width: 25px;
+    margin-right: 10px;
+}
+
+#buttonSignUp {
+    padding: 12px 4em;
+    background-color: #888;
+    color: white;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    border: none;
+    cursor: not-allowed;
+
+}
+
+#buttonSignUp.active {
+    padding: 12px 4em;
+    background-color: #333;
+    color: white;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    border: none;
+    cursor: pointer;
+}
+
+#buttonSignUp:hover.active {
+    background-color: darkolivegreen;
+}
+
+/* pop up sukses css */
+
+.popUpSuksesPr {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .3);
+    top: -100%;
+    z-index: 99999;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.popUpSuksesPr.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    z-index: 99999;
+}
+
+.popUpSukses {
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 99;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.popUpSukses.active {
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.popUpSukses h4 {
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.popUpSukses a {
+    text-decoration: none;
+    color: #fff;
+    background-color: darkolivegreen;
+    font-family: 'poppins', sans-serif;
+    padding: 12px 0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin-top: 12px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.popUpSukses a:hover {
+    background-color: red;
+}
+
+.popUpSukses p {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 2px 6px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.berhasil {
+    display: none;
+}

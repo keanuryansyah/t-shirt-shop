@@ -1,0 +1,221 @@
+#sectHead {
+    height: auto;
+    background-color: #fff;
+    padding: 0;
+    position: fixed;
+    z-index: 4;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+#containerHead {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo a {
+    color: #333;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    font-size: 3em;
+    text-decoration: none;
+}
+
+.menu {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuLink {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuLink a {
+    color: #333;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'roboto', sans-serif;
+    font-size: .9em;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+.menuLink a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.menuLink span {
+    display: none;
+}
+
+.menuSearch {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menuSearch i {
+    margin-left: 22px;
+    color: darkolivegreen;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.userProfile {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.userProfileLogout {
+    position: absolute;
+    top: 70px;
+    background-color: #333;
+    right: 0;
+    width: 400px;
+    height: 0;
+    padding: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.userProfileLogout.active {
+    position: absolute;
+    top: 70px;
+    background-color: #333;
+    right: 0;
+    width: 400px;
+    height: 185px;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.userProfileLogout h4 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.userProfileLogout p {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.userProfileLogout i {
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: pink;
+    font-size: 38px;
+}
+
+.logOutBtn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logOutBtn a {
+    background-color: darkolivegreen;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    padding: 4px 5em;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.logOutBtn a:hover {
+    background-color: red;
+}
+
+.cartItemHead {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cartItemHead p {
+    position: absolute;
+    right: -10px;
+    top: 14px;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.loginedBro,
+.masihKosongBro {
+    display: none;
+}
